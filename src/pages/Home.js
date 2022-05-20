@@ -1,8 +1,9 @@
 import React from 'react'
+import Button from '@mui/material/Button';
 
 function Home() {
   return (
-    <div>맨앞 홈페이지</div>
+      <Button variant="contained">시작화면</Button>
   )
 }
 
