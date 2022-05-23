@@ -31,4 +31,5 @@ const Img2 = styled.div`
 `
 const Zzzzzz = styled.div`
   background-color:black;
+  
 `
