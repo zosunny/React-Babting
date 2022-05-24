@@ -24,7 +24,7 @@ const A2 = styled.div`
   margin-left:-150px;
   margin-top:50px;
   background-color:#F1F8E0;
-  border 3px solid #A9F5F2;
+  border: 3px solid #A9F5F2;
 `
 const A3 = styled.div`
   width: 500px;
