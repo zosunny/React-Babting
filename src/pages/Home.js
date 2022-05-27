@@ -1,33 +1,23 @@
 import React from 'react'
 import bgimg from '../imgg/salad.jpg'
-//import img2 from '../imgg/12.jpg'
-import Button from '@mui/material/Button';
+import Button from 'react-bootstrap/Button';
 import styled from 'styled-components'
-import { positions, width } from '@mui/system';
-import { Container } from '../components/Styles/Container/Container_style';
-import { Header, MainHeader, BGImage } from '../components/Styles/Header/Header_styled';
-// import "./home.css";
-
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+  const navigate = useNavigate()
+  const handleClickButton = () => {
+    navigate('/main')
+  }
   return (
     <Container>
-        <BGImage>
-          <MainHeader>
-            {/*
-            <img src={bgimg} alt="배경이미지" resizeMode="stretch"></img>
-            */}
-          <h1>내면의 '내'가 결정하는 오늘의 메뉴를 추천 받으세요!<br></br>
-            <button>추천받기시작</button>
-          </h1>
-          </MainHeader>
-        </BGImage>
-        {/*
-      <div style={{positions:'reletive'}}>
-      <img src={img1} alt="imgg/11.jpg" width='900' height='965' ></img>
-      <img src={img2} alt="imgg/12.jpg" width='960' height='965' ></img>
-      </div>
-        */}
+      <Header>
+        <BGImg>
+          <img src={bgimg} alt="홈이미지" />
+        </BGImg>
+        <Title>밥오밥나무가 추천하는 오늘의 메뉴를 알고싶으신가요?</Title>
+        <Button variant="outline-warning" style={{}} onClick={handleClickButton}>추천받기</Button>
+      </Header>
     </Container>
     
   );
@@ -35,14 +25,20 @@ export const Home = () => {
 
 export default Home
 
-const Img1 = styled.div`
- 
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
 `
-const Img2 = styled.div`
+const Header = styled.div`
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+`
+const Title = styled.div`
+  font-size: 20pt;
+`
+const BGImg = styled.div`
 
-  
-`
-const Zzzzzz = styled.div`
-  background-color:black;
-  
+  margin: 0 0 0 0
 `
