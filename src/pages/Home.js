@@ -34,15 +34,3 @@ export const Home = () => {
 }
 
 export default Home
-
-const Img1 = styled.div`
- 
-`
-const Img2 = styled.div`
-
-  
-`
-const Zzzzzz = styled.div`
-  background-color:black;
-  
-`
