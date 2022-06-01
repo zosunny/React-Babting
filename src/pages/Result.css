@@ -1,0 +1,21 @@
+.eat{
+  position: absolute;
+  left:45%;
+  font-size:35px;
+  margin-top: 30px;
+}
+.picture{
+  position: relative;
+  top: 40%;
+  left: 48%;
+}
+.picture2{
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+.button1{
+  position: absolute;
+  bottom:10%;
+  left: 47%;
+}
