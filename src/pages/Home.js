@@ -1,5 +1,5 @@
 import React from 'react'
-import bgimg from '../imgg/salad.jpg'
+//import bgimg from '../imgg/salad.jpg'
 import Button from 'react-bootstrap/Button';
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom';
@@ -15,7 +15,7 @@ export const Home = () => {
         <BGImg />
         <Title>
           <p>밥오밥나무가 추천하는 오늘의 메뉴를 알고싶으신가요?</p>
-          <Button variant="outline-warning" style={{}} onClick={handleClickButton}>추천받기</Button>
+          <Button variant="outline-success" style={{}} onClick={handleClickButton}>추천받기</Button>
         </Title>
       </Contents>
     </Container>
