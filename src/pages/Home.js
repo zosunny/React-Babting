@@ -11,15 +11,15 @@ export const Home = () => {
   }
   return (
     <Container>
-      <Header>
-        <BGImg>
-          <img src={bgimg} alt="홈이미지" />
-        </BGImg>
-        <Title>밥오밥나무가 추천하는 오늘의 메뉴를 알고싶으신가요?zzddzz</Title>
-        <Button variant="outline-warning" style={{}} onClick={handleClickButton}>추천받기</Button>
-      </Header>
+      <Contents>
+        <BGImg />
+        <Title>
+          <p>밥오밥나무가 추천하는 오늘의 메뉴를 알고싶으신가요?</p>
+          <Button variant="outline-warning" style={{}} onClick={handleClickButton}>추천받기</Button>
+        </Title>
+      </Contents>
     </Container>
-    
+
   );
 }
 
@@ -27,18 +27,24 @@ export default Home
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: calc(100% - 56px);
 `
-const Header = styled.div`
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
+const Contents = styled.div`
+  height:100%;
 `
 const Title = styled.div`
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
   font-size: 20pt;
+  color:#fff;
+  text-align:center;
 `
 const BGImg = styled.div`
-  
+  width:100%;
+  height:100%;
+  background:url('../imgg/salad.jpg');
+  background-size:cover;
   margin: 0 0 0 0;
 `
