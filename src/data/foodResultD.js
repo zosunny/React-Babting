@@ -1,4 +1,3 @@
-
 /*
 export const ResultData = [
   {
@@ -226,4 +225,4 @@ export const ResultData = [
     image: `${}`
   }
 ]
-*/
+*/ 
