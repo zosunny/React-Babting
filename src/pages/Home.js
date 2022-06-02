@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <Container>
       <Contents>
-        <BGImg />
+        <BGImg/>    
         <Title>
           <p>밥오밥나무가 추천하는 오늘의 메뉴를 알고싶으신가요?</p>
           <Button variant="outline-warning" style={{}} onClick={handleClickButton}>추천받기</Button>
@@ -25,13 +25,15 @@ export const Home = () => {
 
 export default Home
 
+
 const Container = styled.div`
   width: 100%;
   height: calc(100% - 56px);
 `
 const Contents = styled.div`
-  height:100%;
+  // height:100%;
 `
+
 const Title = styled.div`
   position:absolute;
   left:50%;
@@ -44,7 +46,7 @@ const Title = styled.div`
 const BGImg = styled.div`
   width:100%;
   height:100%;
-  background:url('../imgg/salad.jpg');
+  background-image:url('../imgg/salad.jpg');
   background-size:cover;
   margin: 0 0 0 0;
 `

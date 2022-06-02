@@ -4,14 +4,17 @@ export const FoodQuestionD = [
     title: "매운 음식을 좋아하십니까?",
     answer1: "매운거 좋지!",
     answer2: "매운건 싫어!",
-    type: "A1A2"
+    type: "A1A2",
+    src:'../imgg/매운사진.png'
+    
   },
   {
     id: 2,
     title: "매운거 좋음?",
     answer1: "좋아",
     answer2: "싫어",
-    type: "A1A2"
+    type: "A1A2",
+    src:'../imgg/매운사진.png'
   },
   {
     id: 3,

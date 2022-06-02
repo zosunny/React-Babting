@@ -7,31 +7,6 @@ import "./Main.css";
 import { FoodQuestionD } from '../data/foodQuestionD'
 import { createSearchParams} from 'react-router-dom'
 
-/*
-const items = [
-  {
-    name:'파스타',
-    src:require('../imgg/pasta.jpg'),
-    dec:'매운거땡긴다',
-  },
-  {
-    name:'초밥',
-    src:require('../imgg/21.jpg'),
-    dec:'초밥떙김ddddd'
-  },
-  {
-    name:'매운맛',
-    src:require('../imgg/매운사진.png'),
-    dec:'asdfazzzzzsf'
-  },
-  {
-    name:'달달한',
-    src:require('../imgg/달콤.webp'),
-    dec:'hhhhhhhhhhhh'
-  },
-]
-*/
-
 const choice_list = [
   {id: "A1A2", score: 0},       //spicy [A1: spicy, A2: non-spicy]
   {id: "B1B2", score: 0},       //temperature [B1: hot, B2: cold]
@@ -61,9 +36,7 @@ const Main = () => {
       const food = newScore.reduce(
         (acc, now) => acc + (now.score >= 2 ? now.id.substring(0,2) : now.id.substring(2,4)), ""
       )
-      //const acc_food = newScore.map((e2) =>
-      //  e2.id === type && e2.score >= 1 ? {id: e2.id.substring(0,2)} : {id: e2.id.substring(2,4)}
-      //)
+     
       console.log("food" + food)
       //결과 페이지 이동
       navigate({
@@ -79,10 +52,10 @@ const Main = () => {
        <ProgressBar striped variant="danger" now={(questionNo / FoodQuestionD.length)} style= {{ marginTop: '20px'}}/>
         <Title>{FoodQuestionD[questionNo].title}</Title>
         <ImgButtonGroup>
-          <Button variant="outline-success" onClick={clickHandler(1, FoodQuestionD[questionNo].type)}>
-            <img src='' style={{width:'25px', height:'50px'}}></img><p>{FoodQuestionD[questionNo].answera}</p>1선택</Button>
-          <Button variant="outline-success" onClick={clickHandler(0, FoodQuestionD[questionNo].type)}>
-            <img src='' style={{width:'125px', height:'50px'}}></img><p>{FoodQuestionD[questionNo].answerb}</p>2선택</Button>
+          <Button variant="outline-success" onClick={() => clickHandler(1, FoodQuestionD[questionNo].type)}>
+            <img src='' style={{width:'25px', height:'50px'}}></img><p>{FoodQuestionD[questionNo].answer1}</p>1선택</Button>
+          <Button variant="outline-success" onClick={() => clickHandler(0, FoodQuestionD[questionNo].type)}>
+            <img src='' style={{width:'125px', height:'50px'}}></img><p>{FoodQuestionD[questionNo].answer2}</p>2선택</Button>
         </ImgButtonGroup>
     </Container>
   );
