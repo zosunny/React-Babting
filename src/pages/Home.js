@@ -14,7 +14,7 @@ export const Home = () => {
         
         <Title>
           <p>밥오밥나무가 추천하는 오늘의 메뉴를 알고싶으신가요?</p>
-          <Button variant="outline-warning" style={{}} onClick={handleClickButton}>추천받기</Button>
+          <Button variant="outline-success" style={{}} onClick={handleClickButton}>추천받기</Button>
         </Title>
       </Contents>
     </Container>
