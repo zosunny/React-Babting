@@ -1,10 +1,14 @@
+//import Spicy from '../public/imgg/매운사진.png'
+
+
 export const FoodQuestionD = [
   {
     id: 1,
     title: "매운 음식을 좋아하십니까?",
     answer1: "매운거 좋지!",
     answer2: "매운건 싫어!",
-    type: "A1A2"
+    type: "A1A2",
+    //foodImg: Spicy
   },
   {
     id: 2,
@@ -104,4 +108,4 @@ export const FoodQuestionD = [
     answer2: "이상",
     type: "E1E2"
   }
-]
+] 
