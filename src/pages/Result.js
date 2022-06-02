@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect  } from 'react'
 import { border } from '@mui/system'
 import styled from 'styled-components'
 import { Badge} from 'react-bootstrap';
@@ -13,7 +13,7 @@ const A1 = styled.div`
   background-color:#F1F8E0;
   position:absolute;
 `
-
+const { kakao } = window;
 
 
 function Result() {
@@ -21,8 +21,21 @@ function Result() {
   let [결과이미지,set결과이미지] = useState('사진');
   let [결과글,set결과글] = useState('글');
 
+  useEffect(() => {
+    const container = document.getElementById('myMap');
+const options = {
+  center: new kakao.maps.LatLng(33.450701, 126.570667),
+  level: 3
+};
+    const map = new kakao.maps.Map(container, options);
+}, []);
   return (
+    
     <A1>
+      <div id='myMap' style={{
+            width: '500px', 
+            height: '500px'
+        }}></div>
       <div className='eat'>
         오늘 뭐 먹지?
       </div>
@@ -39,4 +52,4 @@ function Result() {
   )
 }
 
-export default Result
+export default Result;

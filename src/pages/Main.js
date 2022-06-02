@@ -41,9 +41,12 @@ const Main = () => {
     setDisplays([items[0], items[1]]);
   }, []);
 
-  const clickHandler = (food) => (d) => {
-    onclick={}
-  };
+  // const clickHandler = (food) => (d) => {
+  //   onclick={event=>{
+  //     event.preventDefault();
+  //     props.onChangeMode(event.target.d.src.dec)
+  //   }}
+  // };
   return (
     <Ddd>
        <ProgressBar striped variant="danger" now={100} 
@@ -51,7 +54,7 @@ const Main = () => {
       <h1 className='title'>바오밥나무</h1>
       {displays.map((d) => {
         return (
-          <div className='flex-1' key={d.name} onClick={clickHandler(d)}>
+          <div className='flex-1' key={d.name} >
             <img className='food-img' src={d.src} />
             <div className='food-name'>{d.name}</div>
             <div className='food-dec'>{d.dec}</div>
