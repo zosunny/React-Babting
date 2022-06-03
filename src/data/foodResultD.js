@@ -1,229 +1,227 @@
 
-/*
 export const ResultData = [
   {
     id: 1,
-    food: "",
+    food: "떡볶이",
     best: "A1B1C1D1E1",
     desc: "맵고 따듯하고 국물이 있고 패스트푸드이면서 만원 이하인 음식입니다.",
-    image: `${}`
+    image: `${11}`
   },
   {
     id: 2,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 3,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 4,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:''
   },
   {
     id: 5,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 6,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 7,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 8,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 9,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 10,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 11,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 12,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 13,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 14,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 15,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 16,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 17,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 18,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 19,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:''
   },
   {
     id: 20,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 21,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:''
   },
   {
     id: 22,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:''
   },
   {
     id: 23,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:'' 
   },
   {
     id: 24,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:'' 
   },
   {
     id: 25,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:''
   },
   {
     id: 26,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:'' 
   },
   {
     id: 27,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:'' 
   },
   {
     id: 28,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:''
   },
   {
     id: 29,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 30,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 31,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image: ''
   },
   {
     id: 32,
     food: "",
     best: "",
     desc: "",
-    image: `${}`
+    image:'' 
   }
 ]
-*/

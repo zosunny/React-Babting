@@ -1,11 +1,10 @@
 import React, { useState,useEffect  } from 'react'
-import { border } from '@mui/system'
 import styled from 'styled-components'
-import { Badge} from 'react-bootstrap';
 import { Button} from 'react-bootstrap';
 import { ClassNames } from '@emotion/react';
 import "./Result.css";
-
+import { ResultData  } from '../data/foodResultD'
+import { useNavigate,useSearchParams } from 'react-router-dom'
 
 const A1 = styled.div`
   width: 100%;
@@ -16,34 +15,34 @@ const A1 = styled.div`
 const { kakao } = window;
 
 
-function Result() {
-
-  let [결과이미지,set결과이미지] = useState('사진');
-  let [결과글,set결과글] = useState('글');
+function Result() { 
 
   useEffect(() => {
     const container = document.getElementById('myMap');
-const options = {
-  center: new kakao.maps.LatLng(33.450701, 126.570667),
-  level: 3
-};
-    const map = new kakao.maps.Map(container, options);
-}, []);
-  return (
+    const options = {
+    center: new kakao.maps.LatLng(33.450701, 126.570667),
+    level: 3
+    };
+        const map = new kakao.maps.Map(container, options);
+    } , []);
+
+    const a =  ((foodResultD)=>{return foodResultD})
+    console.log(a)
     
+  return ( 
     <A1>
       <div id='myMap' style={{
-            width: '500px', 
-            height: '500px'
-        }}></div>
+          width: '500px', 
+          height: '500px'}}>
+      </div>
       <div className='eat'>
         오늘 뭐 먹지?
       </div>
         <div className='picture'>
-          <h3>{결과이미지}</h3>
+          <h3>zz</h3>
         </div>
         <div className='picture2'>
-          <h3>{결과글}</h3>
+          <h3>desc</h3>
         </div>
         <Button className='button1' variant="secondary" size="lg">
             <a href="/">다시하기</a>

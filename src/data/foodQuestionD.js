@@ -5,7 +5,8 @@ export const FoodQuestionD = [
     answer1: "매운거 좋지!",
     answer2: "매운건 싫어!",
     type: "A1A2",
-    src:'../imgg/매운사진.png'
+    zzz:'../imgg/매운사진.png',
+    zzz2:'../imgg/달콤.webp'
     
   },
   {
@@ -14,14 +15,16 @@ export const FoodQuestionD = [
     answer1: "좋아",
     answer2: "싫어",
     type: "A1A2",
-    src:'../imgg/매운사진.png'
+    zzz:'../imgg/매운사진.png',
+    zzz2:'../imgg/달콤.webp'
   },
   {
     id: 3,
     title: "매운거??",
     answer1: "ㅇㅋ",
     answer2: "ㄴㄴ",
-    type: "A1A2"
+    type: "A1A2",
+    zzz:'../imgg/11.jpg'
   },
   {
     id: 4,

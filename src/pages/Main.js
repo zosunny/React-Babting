@@ -53,14 +53,13 @@ const Main = () => {
         <Title>{FoodQuestionD[questionNo].title}</Title>
         <ImgButtonGroup>
           <Button variant="outline-success" onClick={() => clickHandler(1, FoodQuestionD[questionNo].type)}>
-            <img src='' style={{width:'25px', height:'50px'}}></img><p>{FoodQuestionD[questionNo].answer1}</p>1선택</Button>
+            <img src={FoodQuestionD[questionNo].zzz} style={{width:'500px', height:'400px'}}></img><p>{FoodQuestionD[questionNo].answer1}</p></Button>
           <Button variant="outline-success" onClick={() => clickHandler(0, FoodQuestionD[questionNo].type)}>
-            <img src='' style={{width:'125px', height:'50px'}}></img><p>{FoodQuestionD[questionNo].answer2}</p>2선택</Button>
+            <img src={FoodQuestionD[questionNo].zzz2} style={{width:'500px', height:'400px'}}></img><p>{FoodQuestionD[questionNo].answer2}</p></Button>
         </ImgButtonGroup>
     </Container>
   );
 };
-
 
 export default Main
 
