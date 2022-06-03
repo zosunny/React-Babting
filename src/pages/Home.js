@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom';
+//import "./Home.css";
 
 export const Home = () => {
   const navigate = useNavigate()
@@ -11,10 +12,9 @@ export const Home = () => {
   return (
     <Container>
       <Contents>
-        
         <Title>
           <p>밥오밥나무가 추천하는 오늘의 메뉴를 알고싶으신가요?</p>
-          <Button variant="outline-warning" style={{}} onClick={handleClickButton}>추천받기</Button>
+          <Button variant="outline-success" style={{}} onClick={handleClickButton}>추천받기</Button>
         </Title>
       </Contents>
     </Container>
@@ -25,10 +25,25 @@ export const Home = () => {
 export default Home
 
 const Container = styled.div`
+  font-family: 'ROKABold';
   width: 100%;
   height: calc(100% - 56px);
+  // position: relative;
+  //z-index: 1;
   background:url('../imgg/salad.jpg');
   background-size:cover;
+  /* &::ater {
+    content: "";
+    width: 100%;
+    height: calc(100% - 56px);
+    background:url('../imgg/salad.jpg');
+    background-size:cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+  } */
 `
 const Contents = styled.div`
   height:100%;

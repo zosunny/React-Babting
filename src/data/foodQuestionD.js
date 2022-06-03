@@ -1,4 +1,5 @@
-//import Spicy from '../public/imgg/매운사진.png'
+import Spicy from '../imgg/매운사진.png'
+import Pasta from '../imgg/pasta.jpg'
 
 
 export const FoodQuestionD = [
@@ -8,14 +9,17 @@ export const FoodQuestionD = [
     answer1: "매운거 좋지!",
     answer2: "매운건 싫어!",
     type: "A1A2",
-    //foodImg: Spicy
+    foodImg1: Spicy,
+    foddImg2: Spicy
   },
   {
     id: 2,
     title: "매운거 좋음?",
     answer1: "좋아",
     answer2: "싫어",
-    type: "A1A2"
+    type: "A1A2",
+    foodImg1: Pasta,
+    foodImg2: Pasta
   },
   {
     id: 3,
