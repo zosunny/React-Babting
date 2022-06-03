@@ -38,7 +38,7 @@ const choice_list = [
   {id: "B1B2", score: 0},       //temperature [B1: hot, B2: cold]
   {id: "C1C2", score: 0},       //soup [C1: soup, C2: non-soup]
   {id: "D1D2", score: 0},       //fast-food [D1: fast-food, D2: slow-food]
-  {id: "E1E2", score: 0}       //price [E1: expensive, E2: cheap]
+  {id: "E1E2", score: 0}        //price [E1: expensive, E2: cheap]
 ]
 */
 
@@ -48,8 +48,8 @@ const Main = () => {
   {id: "A1A2", score: 0},       //spicy [A1: spicy, A2: non-spicy]
   {id: "B1B2", score: 0},       //temperature [B1: hot, B2: cold]
   {id: "C1C2", score: 0},       //soup [C1: soup, C2: non-soup]
-  {id: "D1D2", score: 0},       //fast-food [D1: fast-food, D2: slow-food]
-  {id: "E1E2", score: 0}        //price [E1: expensive, E2: cheap]
+  //{id: "D1D2", score: 0},       //fast-food [D1: fast-food, D2: slow-food]
+  {id: "D1D2", score: 0}        //price [D1: expensive, D2: cheap]
 ])
  
   const navigate = useNavigate()
