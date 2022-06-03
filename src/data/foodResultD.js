@@ -1,11 +1,13 @@
+import Salad from '../imgg/salad.jpg'
 
 export const ResultData = [
   {
     id: 1,
-    food: "떡볶이",
-    best: "A1B1C1D1E1",
+
+    food: "샐러드",
+    combi: "A1B1C1D1",
     desc: "맵고 따듯하고 국물이 있고 패스트푸드이면서 만원 이하인 음식입니다.",
-    image: `${11}`
+    image: `${Salad}`
   },
   {
     id: 2,
@@ -112,116 +114,4 @@ export const ResultData = [
     desc: "",
     image: ''
   },
-  {
-    id: 17,
-    food: "",
-    best: "",
-    desc: "",
-    image: ''
-  },
-  {
-    id: 18,
-    food: "",
-    best: "",
-    desc: "",
-    image: ''
-  },
-  {
-    id: 19,
-    food: "",
-    best: "",
-    desc: "",
-    image:''
-  },
-  {
-    id: 20,
-    food: "",
-    best: "",
-    desc: "",
-    image: ''
-  },
-  {
-    id: 21,
-    food: "",
-    best: "",
-    desc: "",
-    image:''
-  },
-  {
-    id: 22,
-    food: "",
-    best: "",
-    desc: "",
-    image:''
-  },
-  {
-    id: 23,
-    food: "",
-    best: "",
-    desc: "",
-    image:'' 
-  },
-  {
-    id: 24,
-    food: "",
-    best: "",
-    desc: "",
-    image:'' 
-  },
-  {
-    id: 25,
-    food: "",
-    best: "",
-    desc: "",
-    image:''
-  },
-  {
-    id: 26,
-    food: "",
-    best: "",
-    desc: "",
-    image:'' 
-  },
-  {
-    id: 27,
-    food: "",
-    best: "",
-    desc: "",
-    image:'' 
-  },
-  {
-    id: 28,
-    food: "",
-    best: "",
-    desc: "",
-    image:''
-  },
-  {
-    id: 29,
-    food: "",
-    best: "",
-    desc: "",
-    image: ''
-  },
-  {
-    id: 30,
-    food: "",
-    best: "",
-    desc: "",
-    image: ''
-  },
-  {
-    id: 31,
-    food: "",
-    best: "",
-    desc: "",
-    image: ''
-  },
-  {
-    id: 32,
-    food: "",
-    best: "",
-    desc: "",
-    image:'' 
-  }
 ]

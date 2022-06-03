@@ -1,3 +1,9 @@
+
+import Spicy from '../imgg/매운사진.png'
+import Pasta from '../imgg/pasta.jpg'
+
+
+
 export const FoodQuestionD = [
   {
     id: 1,
@@ -5,51 +11,57 @@ export const FoodQuestionD = [
     answer1: "매운거 좋지!",
     answer2: "매운건 싫어!",
     type: "A1A2",
-    zzz:'../imgg/매운사진.png',
-    zzz2:'../imgg/달콤.webp'
-    
+    foddImg1:'../imgg/매운사진.png',
+    foddImg2:'../imgg/매운거싫음.jpg',
   },
   {
     id: 2,
-    title: "매운거 좋음?",
-    answer1: "좋아",
-    answer2: "싫어",
+    title: "국물 있는거 좋아함?",
+    answer1: '국물o',
+    answer2: "국물x",
     type: "A1A2",
-    zzz:'../imgg/매운사진.png',
-    zzz2:'../imgg/달콤.webp'
+    foodImg1: '../imgg/신라면.jpg',
+    foodImg2: '../imgg/아주매움.jpg'
   },
   {
     id: 3,
-    title: "매운거??",
-    answer1: "ㅇㅋ",
-    answer2: "ㄴㄴ",
+    title: "따뜻한음식? 차가운음식?",
+    answer1: "따뜻한거",
+    answer2: "차가운거",
     type: "A1A2",
-    zzz:'../imgg/11.jpg'
+    foodImg1: '../imgg/신라면.jpg',
+    foodImg2: '../imgg/아주매움.jpg'
   },
   {
     id: 4,
-    title: "따듯한 음식과 시원한 음식 중 어느 것을 고르시겠습니까?",
-    answer1: "따듯한 음식!",
-    answer2: "차가운 음식!",
-    type: "B1B2"
+    title: "지금 배고파??",
+    answer1: "ㅇㅇ배고픔",
+    answer2: "적당히배고픔",
+    type: "B1B2",
+    foodImg1: '../imgg/신라면.jpg',
+    foodImg2: '../imgg/아주매움.jpg'
   },
   {
     id: 5,
-    title: "따듯한거랑 시원한거 중에 어느게 좋음?",
-    answer1: "따듯한거",
-    answer2: "시원한거",
-    type: "B1B2"
+    title: "가격대 고르기",
+    answer1: "1만원 이하",
+    answer2: "1만원 이상",
+    type: "B1B2",
+    foodImg1: '../imgg/신라면.jpg',
+    foodImg2: '../imgg/아주매움.jpg'
   },
   {
     id: 6,
-    title: "따듯한거? 시원한 거?",
-    answer1: "따듯",
-    answer2: "시원",
-    type: "B1B2"
+    title: "담백한거? 간간한거?",
+    answer1: "담백한거 ㄱㄱ",
+    answer2: "간간한거 ㄱㄱ",
+    type: "B1B2",
+    foodImg1: '../imgg/신라면.jpg',
+    foodImg2: '../imgg/아주매움.jpg'
   },
   {
     id: 7,
-    title: "국물있는거와 국물이 없는 것 중 어느것을 고르시겠습니가?",
+    title: "익힌거? 안익힌 거 ?",
     answer1: "국물 있는거요",
     answer2: "국물 없는 거요",
     type: "C1C2"
@@ -89,25 +101,4 @@ export const FoodQuestionD = [
     answer2: "ㄴㄴ",
     type: "D1D2"
   },
-  {
-    id: 13,
-    title: "만원 이하로 먹을 수 있는 음식과 만원 이상인 음식중 어느 것을 고르시겠습니까?",
-    answer1: "만원 이하로 먹을 수 잇는 거요",
-    answer2: "만원 이상인 음식이요",
-    type: "E1E2"
-  },
-  {
-    id: 14,
-    title: "만원 이하와 만원 이상 중 어느 음식 고를래?",
-    answer1: "만원 이하",
-    answer2: "만원 이상",
-    type: "E1E2"
-  },
-  {
-    id: 15,
-    title: "만원 이하? 만원 이상?",
-    answer1: "이하",
-    answer2: "이상",
-    type: "E1E2"
-  }
 ]

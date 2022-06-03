@@ -12,7 +12,6 @@ const choice_list = [
   {id: "B1B2", score: 0},       //temperature [B1: hot, B2: cold]
   {id: "C1C2", score: 0},       //soup [C1: soup, C2: non-soup]
   {id: "D1D2", score: 0},       //fast-food [D1: fast-food, D2: slow-food]
-  {id: "E1E2", score: 0},       //price [E1: expensive, E2: cheap]
 ]
 
 const Main = () => {
@@ -53,9 +52,9 @@ const Main = () => {
         <Title>{FoodQuestionD[questionNo].title}</Title>
         <ImgButtonGroup>
           <Button variant="outline-success" onClick={() => clickHandler(1, FoodQuestionD[questionNo].type)}>
-            <img src={FoodQuestionD[questionNo].zzz} style={{width:'500px', height:'400px'}}></img><p>{FoodQuestionD[questionNo].answer1}</p></Button>
+            <img src={FoodQuestionD[questionNo].foodImg1} style={{width:'500px', height:'400px'}}></img><p>{FoodQuestionD[questionNo].answer1}</p></Button>
           <Button variant="outline-success" onClick={() => clickHandler(0, FoodQuestionD[questionNo].type)}>
-            <img src={FoodQuestionD[questionNo].zzz2} style={{width:'500px', height:'400px'}}></img><p>{FoodQuestionD[questionNo].answer2}</p></Button>
+            <img src={FoodQuestionD[questionNo].foodImg2} style={{width:'500px', height:'400px'}}></img><p>{FoodQuestionD[questionNo].answer2}</p></Button>
         </ImgButtonGroup>
     </Container>
   );
