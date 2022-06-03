@@ -31,3 +31,11 @@
   margin-left: 20px;
   bottom: 20%
 }
+.leftbutton{
+  display: block;
+  margin: 0 auto;
+}
+.rightbutton{
+  display: block;
+  margin: 0 auto;
+}

@@ -12,11 +12,19 @@ const choice_list = [
   {id: "B1B2", score: 0},       //temperature [B1: hot, B2: cold]
   {id: "C1C2", score: 0},       //soup [C1: soup, C2: non-soup]
   {id: "D1D2", score: 0},       //fast-food [D1: fast-food, D2: slow-food]
+  {id: "E1E2", score: 0}        //price [E1: expensive, E2: cheap]
 ]
+
 
 const Main = () => {
   const [questionNo, setQuestionNo] = React.useState(0)
-  const [totalScore, setTotalScore] = React.useState(choice_list)
+  const [totalScore, setTotalScore] = React.useState([
+  {id: "A1A2", score: 0},       //spicy [A1: spicy, A2: non-spicy]
+  {id: "B1B2", score: 0},       //temperature [B1: hot, B2: cold]
+  {id: "C1C2", score: 0},       //soup [C1: soup, C2: non-soup]
+  //{id: "D1D2", score: 0},       //fast-food [D1: fast-food, D2: slow-food]
+  {id: "D1D2", score: 0}        //price [D1: expensive, D2: cheap]
+])
  
   const navigate = useNavigate()
   console.log('totalScore', totalScore)
@@ -31,11 +39,10 @@ const Main = () => {
       setQuestionNo(questionNo + 1)
     //마지막페이지면 결론 출력해야 됨
     }else{
-      //각 해당 질문에서 score가 1이상이면 n1/n2 중 n1을 선택 아니면 n2 선택 
+      //각 해당 질문에서 score가 2이상이면 n1/n2 중 n1을 선택 아니면 n2 선택 
       const food = newScore.reduce(
         (acc, now) => acc + (now.score >= 2 ? now.id.substring(0,2) : now.id.substring(2,4)), ""
       )
-     
       console.log("food" + food)
       //결과 페이지 이동
       navigate({
@@ -51,14 +58,15 @@ const Main = () => {
        <ProgressBar striped variant="danger" now={(questionNo / FoodQuestionD.length)} style= {{ marginTop: '20px'}}/>
         <Title>{FoodQuestionD[questionNo].title}</Title>
         <ImgButtonGroup>
-          <Button variant="outline-success" onClick={() => clickHandler(1, FoodQuestionD[questionNo].type)}>
+          <Button className='leftbutton' variant="outline-success" onClick={() => clickHandler(1, FoodQuestionD[questionNo].type)}>
             <img src={FoodQuestionD[questionNo].foodImg1} style={{width:'500px', height:'400px'}}></img><p>{FoodQuestionD[questionNo].answer1}</p></Button>
-          <Button variant="outline-success" onClick={() => clickHandler(0, FoodQuestionD[questionNo].type)}>
+          <Button className='rightbutton' variant="outline-success" onClick={() => clickHandler(0, FoodQuestionD[questionNo].type)}>
             <img src={FoodQuestionD[questionNo].foodImg2} style={{width:'500px', height:'400px'}}></img><p>{FoodQuestionD[questionNo].answer2}</p></Button>
         </ImgButtonGroup>
     </Container>
   );
 };
+
 
 export default Main
 
