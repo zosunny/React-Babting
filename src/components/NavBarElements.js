@@ -1,11 +1,12 @@
 import React from 'react'
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+//import Logo from '../imgg/logo2.png';
 
 export const NavBarElements = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{fontFamily: 'CBNUJIKJI'}}>
   <Container>
-  <Navbar.Brand href="/">밥오밥나무</Navbar.Brand>
+  <Navbar.Brand href="/">바오밥나무</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
@@ -25,10 +26,8 @@ export const NavBarElements = () => {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">회원가입</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        로그인
-      </Nav.Link>
+      <Nav.Link href="/Join">회원가입</Nav.Link>
+      <Nav.Link eventKey={2} href="/Login">로그인</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>

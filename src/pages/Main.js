@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import "./Main.css";
 import { FoodQuestionD } from '../data/foodQuestionD'
 import { createSearchParams} from 'react-router-dom'
-import { fontSize } from '@mui/system';
+import { calculateNewValue } from '@testing-library/user-event/dist/utils';
+//import { fontSize } from '@mui/system';
 
 const choice_list = [
   {id: "A1A2", score: 0},       //spicy [A1: spicy, A2: non-spicy]
@@ -53,10 +54,14 @@ const Main = () => {
        <ProgressBar striped variant="danger" now={(questionNo / FoodQuestionD.length)} style= {{ marginTop: '50px'}}/>
         <Title>{FoodQuestionD[questionNo].title}</Title>
         <ImgButtonGroup>
-          <Button className='leftbutton' variant="warning" onClick={() => clickHandler(1, FoodQuestionD[questionNo].type)}>
-            <img src={FoodQuestionD[questionNo].foodImg1} style={{width:'500px', height:'400px', padding: '10px'}}></img><p style={{fontSize:'20px'}}>{FoodQuestionD[questionNo].answer1}</p></Button>
-          <Button className='rightbutton' variant="info" onClick={() => clickHandler(0, FoodQuestionD[questionNo].type)}>
-            <img src={FoodQuestionD[questionNo].foodImg2} style={{width:'500px', height:'400px', padding: '10px'}}></img><p style={{fontSize:'20px'}}>{FoodQuestionD[questionNo].answer2}</p></Button>
+          <Button className='leftbutton' variant="warning" onClick={() => clickHandler(1, FoodQuestionD[questionNo].type)} style={{width:'460px', height:'400px', margin:'0 20px'}}>
+            <img src={FoodQuestionD[questionNo].foodImg1} style={{width:'400px', height:'300px'}}></img>
+            <Desc>{FoodQuestionD[questionNo].answer1}</Desc>
+          </Button>
+          <Button className='rightbutton' variant="info" onClick={() => clickHandler(0, FoodQuestionD[questionNo].type)} style={{width:'460px', height:'400px', margin:'0 20px'}}>
+            <img src={FoodQuestionD[questionNo].foodImg2} style={{width:'400px', height:'300px'}}></img>
+            <Desc>{FoodQuestionD[questionNo].answer2}</Desc>
+          </Button>
         </ImgButtonGroup>
     </Container>
   );
@@ -66,29 +71,42 @@ const Main = () => {
 export default Main
 
 const Container = styled.div`
+  font-family: 'CBNUJIKJI';
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
+  background-color: beige;
 `
 
 const Title = styled.div`
-  font-size: 25pt;
+  font-size: 30pt;
   display: flex;
-  height: 90px;
-  margin-top: 70px;
-  margin-left: auto;
-  margin-right: auto;
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  top: 25%;
+  left: 50%;
 `
-
 const ImgButtonGroup = styled.div`
-  display: flex;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  //align-items:center;
-  //justify-content: center;
   /* &::hover{
     //content: "";
     border: 2px solid gray;
   } */
+  display: flex;
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%,-50%);
+  top: 70%;
+  left: 50%;
+`
+
+const Desc = styled.div`
+  font-size: 22px;
+  text-align: center;
+  margin: 11px auto 0;
+  white-space: pre-line;
 `

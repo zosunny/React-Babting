@@ -13,8 +13,8 @@ export const Home = () => {
     <Container>
       <Contents>
         <Title>
-          <p>밥오밥나무가 추천하는 오늘의 메뉴를 알고싶으신가요?</p>
-          <Button variant="outline-success" style={{}} onClick={handleClickButton}>추천받기</Button>
+          <p>밥오밥나무가 추천하는 <br/>오늘의 메뉴를 알고싶으신가요?</p>
+          <Button variant="success" onClick={handleClickButton}>추천받기</Button>
         </Title>
       </Contents>
     </Container>
@@ -25,7 +25,7 @@ export const Home = () => {
 export default Home
 
 const Container = styled.div`
-  //font-family: 'StrongArmy';
+  font-family: 'CBNUJIKJI';
   width: 100%;
   height: calc(100% - 56px);
   position: relative;
@@ -51,10 +51,11 @@ const Contents = styled.div`
 `
 const Title = styled.div`
   position:absolute;
-  left:50%;
+  left:28%;
   top:50%;
   transform: translate(-50%,-50%);
-  font-size: 20pt;
+  font-size: 35pt;
   color:#fff;
-  text-align:center;
+  //text-align:center;
+  white-space: pre-line;
 `

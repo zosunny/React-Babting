@@ -2,14 +2,13 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom';
-import { ButtonGroup } from 'react-bootstrap';
 
 const { kakao } = window;
 
 export const ShowMap = () => {
   const navigate = useNavigate()
   const handleClickButton = () => {
-    navigate('/home')
+    navigate('/')
   }
   React.useEffect(() => {
     const container = document.getElementById('myMap');
@@ -22,12 +21,17 @@ export const ShowMap = () => {
 
   return (
     <Container>
-      <Title><h3>음식점 찾기</h3></Title>
+      <Title>음식점 찾기</Title>
        <div id='myMap' style={{
             width: '500px', 
             height: '500px',
+            margin: 'auto',
+            padding: '10px',
+            border: '2px solid gray'
         }}></div>
-        <Button variant="outline-success" style={{}} onClick={handleClickButton}>처음으로</Button>
+      <Btn>
+        <Button variant="outline-success" onClick={handleClickButton}>처음으로</Button>
+      </Btn>
     </Container>
   )
 }
@@ -35,6 +39,7 @@ export const ShowMap = () => {
 export default ShowMap;
 
 const Container = styled.div`
+  font-family: 'CBNUJIKJI';
   width: 100%;
   height: 94%;
   background-color:#F1F8E0;
@@ -43,6 +48,16 @@ const Container = styled.div`
 const Title = styled.div`
   font-size: 30pt;
   display: flex;
+  margin: 20px auto;
   justify-content: center;
   align-items: center;
+`
+
+const Btn = styled.div`
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%,-50%);
+  top: 89%;
+  left: 50%;
 `
