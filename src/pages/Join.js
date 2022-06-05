@@ -26,7 +26,7 @@ export const Join = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupPassword">
           <Form.Label>Password Confirm</Form.Label>
-          <Form.Control type="password confirm" placeholder="Password" />
+          <Form.Control type="password" placeholder="Password confirm" />
         </Form.Group>
         <Button variant="outline-success" style={{width:'300px', marginTop:'20px', marginLeft:'22.5px'}}>Sign up</Button>
       </Form>
