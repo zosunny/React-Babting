@@ -10,7 +10,7 @@ export const NavBarElements = () => {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
       <Nav.Link href="/Main">추천받기</Nav.Link>
-      <Nav.Link href="/Result">추천결과</Nav.Link>
+      <Nav.Link href="/ShowMap">지도보기</Nav.Link>
       <NavDropdown title="게시판" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">공지사항</NavDropdown.Item>
         {/*

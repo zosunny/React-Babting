@@ -10,23 +10,29 @@ import {ResultData} from '../data/foodResultD'
 import {useNavigate, useSearchParams} from 'react-router-dom'
 import "./Result.css";
 
-const { kakao } = window;
+//const { kakao } = window;
 
 const Result = () => {
   const navigate = useNavigate()
+  const handleClickButton1 = () => {
+    navigate('/main')
+  }
+  const handleClickButton2 = () => {
+    navigate('/showmap')
+  }
   const [searchParams] = useSearchParams()
   const food = searchParams.get('food')
   const [foodResultD, setFoodResultD] = React.useState({})
 
   
-  React.useEffect(() => {
-    const container = document.getElementById('myMap');
-    const options = {
-      center: new kakao.maps.LatLng(33.450701, 126.570667),
-      level: 3
-    };
-    const map = new kakao.maps.Map(container, options);
-  }, []);
+  // React.useEffect(() => {
+  //   const container = document.getElementById('myMap');
+  //   const options = {
+  //     center: new kakao.maps.LatLng(33.450701, 126.570667),
+  //     level: 3
+  //   };
+  //   const map = new kakao.maps.Map(container, options);
+  // }, []);
   
   React.useEffect(() => {
     const result = ResultData.find((e) => e.combi === food)
@@ -42,11 +48,14 @@ const Result = () => {
       <Contents>
         밥오밥나무가 추천하는 오늘의 메뉴는 {foodResultD.food}입니다!
       </Contents>
-       <div id='myMap' style={{
+       {/* <div id='myMap' style={{
             width: '500px', 
-            height: '500px'
-        }}></div>
-      <Button variant="secondary" size="lg"><a href="/">다시하기</a></Button>
+            height: '500px',
+            left: '50%',
+            right: '50%'
+        }}></div> */}
+        <Button variant="outline-success" style={{}} onClick={handleClickButton1}>다시하기</Button>
+        <Button variant="outline-success" style={{}} onClick={handleClickButton2}>바오밥지도보기</Button>
     </Container>
     /*
     <A1>
