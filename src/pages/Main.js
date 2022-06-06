@@ -89,6 +89,7 @@ const Title = styled.div`
   transform: translate(-50%,-50%);
   top: 25%;
   left: 50%;
+  white-space: pre-line;
 `
 const ImgButtonGroup = styled.div`
   /* &::hover{

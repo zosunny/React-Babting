@@ -11,7 +11,7 @@ export const FoodQuestionD = [
   {
     id: 2,
     title: "친구들과 엽떡을 먹으러 갔다. \n나의 선택은?",
-    answer1: "당연히 매운맛이지",
+    answer1: "엽떡은 당연히 매운맛이지",
     answer2: "착한맛 먹자..",
     type: "A1A2",
     foodImg1:'../imgg/아주매움.jpg',
@@ -20,7 +20,7 @@ export const FoodQuestionD = [
   {
     id: 3,
     title: "추운데 아이스 음료를 마시는게 신기하다는 친구, \n이때 나는?",
-    answer1: "그니까. 당연 뜨죽따 아닌가?",
+    answer1: "그니까. 추운데 왜  아이스를 마셔? \n당연 뜨죽따 아닌가?",
     answer2: "나도 얼죽아인데? 아이스는 포기 못해ㅎ",
     type: "B1B2",
     foodImg1:'../imgg/얼죽아.jpg',
@@ -36,8 +36,8 @@ export const FoodQuestionD = [
   },
   {
     id: 5,
-    title: "한여름 회사 점심시간. 같은 가격의 국밥과 시원한 냉면이 있다. \n나의 선택은?",
-    answer1: "같은 값이라도 뜨끈한 국물의 든든한 국밥이 최고지",
+    title: "한여름 회사 점심시간, \n같은 가격의 국밥과 시원한 냉면이 있다. \n나의 선택은?",
+    answer1: "같은 값이라도 \n뜨끈한 국물의 든든한 국밥이 최고지",
     answer2: "당연 여름엔 시원하게 냉면이지ㅋㅋ",
     type: "B1B2",
     foodImg1:'../imgg/국밥.jpg',
@@ -45,8 +45,8 @@ export const FoodQuestionD = [
   },
   {
     id: 6,
-    title: "일본 여행 첫 날, 카지노에서 경비를 탕진한 \n나의 선택은?",
-    answer1: "편의점 음식으로 3일을 때운다.",
+    title: "일본 여행 첫 날, \n카지노에서 경비를 탕진한 나의 선택은?",
+    answer1: "돈을 아껴야하니 편의점 음식으로 3일을 때운다.",
     answer2: "그래도 일본까지 왔는데 라멘은 먹어야지.\n 규카츠와 라멘을 먹고 2일은 굶는다. ",
     type: "D1D2",
     foodImg1:'../imgg/일본편의점.jpg',
@@ -63,7 +63,7 @@ export const FoodQuestionD = [
   },
   {
     id: 8,
-    title: "절대 끝나지 않을 냉면 논쟁. \n나의 취향은?",
+    title: "절대 끝나지 않을 냉면 논쟁, \n나의 취향은?",
     answer1: "시원한 육수를 들이킬 수 있는 물냉!",
     answer2: "물냉은 밍밍해 \n매콤한 양념으로 입맛을 돋구는 비냉!",
     type: "C1C2",
@@ -90,7 +90,7 @@ export const FoodQuestionD = [
   },
   {
     id: 11,
-    title: "밤샘 과제 하느라 뇌절 온 당신, 치킨을 주문하려 한다. \n나의 선택은?",
+    title: "밤샘 과제 하느라 뇌절 온 당신, \n치킨을 주문하려 한다. \n나의 선택은?",
     answer1: "포장하면 3000원 할인하네 포장주문 해야지",
     answer2: "배달비가 4000원이지만..\n나가기 귀찮아 배달 ㄱㄱ",
     type: "D1D2",

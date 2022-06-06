@@ -9,16 +9,12 @@ export const Join = () => {
     <Contents>  
       <Form>
         <Form.Group className="mb-3" controlId="formGroupEmail">
-          <Form.Label>User id</Form.Label>
-          <Form.Control type="text" placeholder="User id" />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formGroupEmail">
           <Form.Label>User name</Form.Label>
           <Form.Control type="text" placeholder="User name" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Label>User id</Form.Label>
+          <Form.Control type="text" placeholder="User id" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupPassword">
           <Form.Label>Password</Form.Label>
@@ -27,6 +23,10 @@ export const Join = () => {
         <Form.Group className="mb-3" controlId="formGroupPassword">
           <Form.Label>Password Confirm</Form.Label>
           <Form.Control type="password" placeholder="Password confirm" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formGroupEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
         </Form.Group>
         <Button variant="outline-success" style={{width:'300px', marginTop:'20px', marginLeft:'22.5px'}}>Sign up</Button>
       </Form>

@@ -23,16 +23,6 @@ const Result = () => {
   const [searchParams] = useSearchParams()
   const food = searchParams.get('food')
   const [foodResultD, setFoodResultD] = React.useState({})
-
-  
-  // React.useEffect(() => {
-  //   const container = document.getElementById('myMap');
-  //   const options = {
-  //     center: new kakao.maps.LatLng(33.450701, 126.570667),
-  //     level: 3
-  //   };
-  //   const map = new kakao.maps.Map(container, options);
-  // }, []);
   
   React.useEffect(() => {
     const result = ResultData.find((e) => e.combi === food)
@@ -46,7 +36,7 @@ const Result = () => {
         <img src={foodResultD.image} width={450} height={450} alt="결과 이미지" />
       </ResultImg>
       <Contents>
-        밥오밥나무가 추천하는 오늘의 메뉴는 {foodResultD.food}입니다!
+        밥팅이 추천하는 오늘의 메뉴는 "{foodResultD.food}"입니다!
       </Contents>
        {/* <div id='myMap' style={{
             width: '500px', 
@@ -59,7 +49,6 @@ const Result = () => {
         <Button variant="outline-success" style={{margin:'20px'}} onClick={handleClickButton2}>지도보기</Button>
       </ButtonGroup>
     </Container>
-
   )
 }
 
@@ -89,24 +78,25 @@ const Title = styled.div`
   align-items: center;
 `
 const ResultImg = styled.div`
-  width: 500px;
-  height: 500px;
+  width: 490px;
+  height: 490px;
   display: flex;
   margin: 20px auto;
-  padding: 25px;
+  padding: 20px;
   align-items: center;
-  border: 1px solid gray;
-  background-color: #FFFFFF;
+  border: 1px solid #E9E3F2;
+  background-color: #F7F5FA;
   border-radius: 5px;
 `
 const Contents = styled.div`
-  width: 500px;
-  font-size: 15pt;
+  width: 1000px;
+  font-size: 20pt;
   display: flex;
   position:absolute;
   justify-content: center;
   align-items: center;
   transform: translate(-50%,-50%);
+  top: 83%;
   left: 50%;
 `
 const ButtonGroup = styled.div`

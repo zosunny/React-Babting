@@ -13,7 +13,7 @@ export const Home = () => {
     <Container>
       <Contents>
         <Title>
-          <p>밥오밥나무가 추천하는 <br/>오늘의 메뉴를 알고싶으신가요?</p>
+          <p>밥팅이 추천하는 <br/><span style={{color:'#6FBA7B'}}>오늘의 메뉴</span>를 알고싶으신가요?</p>
           <Button variant="success" onClick={handleClickButton}>추천받기</Button>
         </Title>
       </Contents>

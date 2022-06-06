@@ -6,7 +6,7 @@ export const NavBarElements = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{fontFamily: 'CBNUJIKJI'}}>
   <Container>
-  <Navbar.Brand href="/">바오밥나무</Navbar.Brand>
+  <Navbar.Brand href="/">Bobting</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
