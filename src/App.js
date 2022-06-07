@@ -19,7 +19,7 @@ function App() {
         <Route path='/main' element={<Main />} />
         <Route path='/result' element={<Result />} />
         <Route path='/showmap' element={<ShowMap />} />
-        {/* <Route path='/map' element={<MapElements />} /> */}
+        <Route path='/map' element={<MapElements />} />
         <Route path='/join' element={<Join />} />
         <Route path='/login' element={<Login />} />
       </Routes>

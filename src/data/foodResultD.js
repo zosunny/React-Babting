@@ -16,14 +16,14 @@ export const ResultData = [
   },
   {
     id: 3,
-    food: "",
+    food: "떡볶이",
     combi: "A1B1C2D1",
     desc: "맵고 따듯 국물없고 만원이하",
     image: ''
   },
   {
     id: 4,
-    food: "",
+    food: "김치말이국수",
     combi: "A1B2C1D1",
     desc: "맵고 차갑 국물있고 만원이하",
     image:''
@@ -93,21 +93,21 @@ export const ResultData = [
   },
   {
     id: 14,
-    food: "",
+    food: "족발",
     combi: "A2B1C2D2",
     desc: "안맵고 따듯 국물없고 만원이상",
     image: ''
   },
   {
     id: 15,
-    food: "",
+    food: "냉모밀 정식",
     combi: "A2B2C1D2",
     desc: "안맵고 차갑 국물있고 만원이상",
     image: ''
   },
   {
     id: 16,
-    food: "",
+    food: "육회",
     combi: "A2B2C2D2",
     desc: "안맵고 차갑 국물없고 만원이상",
     image: ''
