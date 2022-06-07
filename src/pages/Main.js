@@ -74,15 +74,15 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
+  justify-content: center;
 `
-
 const Title = styled.div`
   font-size: 25pt;
-  margin: 50px 0;
+  margin:50px ;
 `
 
 const ImgButtonGroup = styled.div`
   display: flex;
-  align-items:center;
   justify-content: center;
+  margin-bottom:120px;
 `

@@ -35,70 +35,54 @@ const Result = () => {
   console.log(foodResultD)
   return (
     <Container>
-      <Title><h3>음식 추천 결과</h3></Title>
+      <Title>음식 추천 결과</Title>
       <ResultImg>
-        <img src={foodResultD.image} width={500} height={500} alt="결과 이미지" />
+        <img src={foodResultD.image} width={400} height={300} alt="결과 이미지" />
       </ResultImg>
       <Contents>
         밥오밥나무가 추천하는 오늘의 메뉴는 {foodResultD.food}입니다!
       </Contents>
+      <Map>
        <div id='myMap' style={{
-            width: '500px', 
-            height: '500px'
+            width: '300px', 
+            height: '300px'
         }}></div>
+        
+      </Map>
       <Button variant="secondary" size="lg"><a href="/">다시하기</a></Button>
+  
     </Container>
-    /*
-    <A1>
-      <div id='myMap' style={{
-            width: '500px', 
-            height: '500px'
-        }}></div>
-      <div className='eat'>
-        오늘 뭐 먹지?
-      </div>
-        <div className='picture'>
-          <img src={foodResultData.}>
-        </div>
-        <div className='picture2'>
-          <h3>{결과글}</h3>
-        </div>
-        <Button className='button1' variant="secondary" size="lg">
-            <a href="/">다시하기</a>
-        </Button>
-    </A1>
-    */
   )
 }
 
 export default Result;
 
-/*
-const A1 = styled.div`
-  width: 100%;
-  height: 94%;
-  background-color:#F1F8E0;
-  position:absolute;
-`
-*/
 const Container = styled.div`
   width: 100%;
   height: 94%;
   background-color:#F1F8E0;
-  position:absolute;
 `
 const Title = styled.div`
   font-size: 30pt;
   display: flex;
   justify-content: center;
-  align-items: center;
 `
 const ResultImg = styled.div`
   margin: 20px 20px;
+  display: flex;
+  justify-content: center;
 `
 const Contents = styled.div`
   font-size: 15pt;
   margin: 30p 30px;
+  display: flex;
+  justify-content: center;
+`
+const Map = styled.div`
+  font-size: 15pt;
+  margin: 30p 30px;
+  display: flex;
+  justify-content: center;
 `
 /*
 const MapGroup = styled.div`
