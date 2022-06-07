@@ -38,14 +38,6 @@ const Result = () => {
       <Contents>
         밥팅이 추천하는 오늘의 메뉴는 "{foodResultD.food}"입니다!
       </Contents>
-      <Map>
-       <div id='myMap' style={{
-            width: '300px', 
-            height: '300px'
-        }}></div>
-        
-      </Map>
-      
       <ButtonGroup>
         <Button variant="outline-success" style={{margin:'20px'}} onClick={handleClickButton1}>다시하기</Button>
         <Button variant="outline-success" style={{margin:'20px'}} onClick={handleClickButton2}>지도보기</Button>
@@ -56,44 +48,36 @@ const Result = () => {
 
 export default Result;
 
-
-
 const Container = styled.div`
   font-family: 'CBNUJIKJI';
-  width: 100%;
-  height: 94%;
+  position: relative;
   background-color:#F1F8E0;
+  //background-size: contain;
+  min-height: 100vh;
 `
 const Title = styled.div`
   font-size: 30pt;
   display: flex;
-  margin: 20px auto;
+  margin: auto;
+  padding-top: 20px;
   justify-content: center;
+  
 `
 const ResultImg = styled.div`
-<<<<<<< HEAD
   margin: 20px 20px;
   display: flex;
   justify-content: center;
 `
 const Contents = styled.div`
-  font-size: 15pt;
-  margin: 30p 30px;
-  display: flex;
-  justify-content: center;
-`
-const Map = styled.div`
-  font-size: 15pt;
-  margin: 30p 30px;
+  font-size: 20pt;
+  margin: 30px 30px;
   display: flex;
   justify-content: center;
 `
 
 const ButtonGroup = styled.div`
-  position:absolute;
+  font-size: 20pt;
+  margin: 30px 30px;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  transform: translate(-50%,-50%);
-  top: 90%;
-  left: 50%;
 `
