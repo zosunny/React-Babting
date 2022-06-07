@@ -2,7 +2,6 @@
 export const ResultData = [
   {
     id: 1,
-
     food: "",
     combi: "A1B1C1D1",
     desc: "맵고 따듯 국물있고 만원이하",
