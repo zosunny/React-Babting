@@ -100,7 +100,7 @@ export const ResultData = [
   },
   {
     id: 15,
-    food: "냉모밀 정식",
+    food: "",
     combi: "A2B2C1D2",
     desc: "안맵고 차갑 국물있고 만원이상",
     image: ''
