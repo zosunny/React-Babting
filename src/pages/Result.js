@@ -10,23 +10,19 @@ import {ResultData} from '../data/foodResultD'
 import {useNavigate, useSearchParams} from 'react-router-dom'
 import "./Result.css";
 
-const { kakao } = window;
+//const { kakao } = window;
 
 const Result = () => {
   const navigate = useNavigate()
+  const handleClickButton1 = () => {
+    navigate('/main')
+  }
+  const handleClickButton2 = () => {
+    navigate('/showmap')
+  }
   const [searchParams] = useSearchParams()
   const food = searchParams.get('food')
   const [foodResultD, setFoodResultD] = React.useState({})
-
-  
-  React.useEffect(() => {
-    const container = document.getElementById('myMap');
-    const options = {
-      center: new kakao.maps.LatLng(33.450701, 126.570667),
-      level: 3
-    };
-    const map = new kakao.maps.Map(container, options);
-  }, []);
   
   React.useEffect(() => {
     const result = ResultData.find((e) => e.combi === food)
@@ -37,10 +33,10 @@ const Result = () => {
     <Container>
       <Title>음식 추천 결과</Title>
       <ResultImg>
-        <img src={foodResultD.image} width={400} height={300} alt="결과 이미지" />
+        <img src={foodResultD.image} width={450} height={450} alt="결과 이미지" />
       </ResultImg>
       <Contents>
-        밥오밥나무가 추천하는 오늘의 메뉴는 {foodResultD.food}입니다!
+        밥팅이 추천하는 오늘의 메뉴는 "{foodResultD.food}"입니다!
       </Contents>
       <Map>
        <div id='myMap' style={{
@@ -49,15 +45,21 @@ const Result = () => {
         }}></div>
         
       </Map>
-      <Button variant="secondary" size="lg"><a href="/">다시하기</a></Button>
-  
+      
+      <ButtonGroup>
+        <Button variant="outline-success" style={{margin:'20px'}} onClick={handleClickButton1}>다시하기</Button>
+        <Button variant="outline-success" style={{margin:'20px'}} onClick={handleClickButton2}>지도보기</Button>
+      </ButtonGroup>
     </Container>
   )
 }
 
 export default Result;
 
+
+
 const Container = styled.div`
+  font-family: 'CBNUJIKJI';
   width: 100%;
   height: 94%;
   background-color:#F1F8E0;
@@ -65,9 +67,11 @@ const Container = styled.div`
 const Title = styled.div`
   font-size: 30pt;
   display: flex;
+  margin: 20px auto;
   justify-content: center;
 `
 const ResultImg = styled.div`
+<<<<<<< HEAD
   margin: 20px 20px;
   display: flex;
   justify-content: center;
@@ -84,9 +88,12 @@ const Map = styled.div`
   display: flex;
   justify-content: center;
 `
-/*
-const MapGroup = styled.div`
-  width: 500px;
-  height: 500px;
+
+const ButtonGroup = styled.div`
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%,-50%);
+  top: 90%;
+  left: 50%;
 `
-*/
