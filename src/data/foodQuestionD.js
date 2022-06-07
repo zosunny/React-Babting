@@ -23,8 +23,8 @@ export const FoodQuestionD = [
     answer1: "그니까. 추운데 왜  아이스를 마셔? \n당연 뜨죽따 아닌가?",
     answer2: "나도 얼죽아인데? 아이스는 포기 못해ㅎ",
     type: "B1B2",
-    foodImg1:'../imgg/얼죽아.jpg',
-    foodImg2:'../imgg/뜨죽따.jpg',
+    foodImg1:'../imgg/뜨죽따.jpg',
+    foodImg2:'../imgg/얼죽아.jpg',
   },
   {
     id: 4,
