@@ -1,4 +1,3 @@
-
 export const ResultData = [
   {
     id: 1,
