@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const { kakao } = window;
 
 export const ShowMap = () => {
+  
   const navigate = useNavigate()
   const handleClickButton = () => {
     navigate('/')
@@ -30,7 +31,7 @@ export const ShowMap = () => {
             border: '2px solid gray'
         }}></div>
       <Btn>
-        <Button variant="outline-success" onClick={handleClickButton}>처음으로</Button>
+        <Button variant="outline-success" >처음으로</Button>
       </Btn>
     </Container>
   )
