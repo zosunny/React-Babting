@@ -1,4 +1,4 @@
-//import React,{ useState, useEffect} from 'react'
+
 import React from 'react'
 import {ProgressBar,Button} from 'react-bootstrap';
 import styled from 'styled-components'
@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import "./Main.css";
 import { FoodQuestionD } from '../data/foodQuestionD'
 import { createSearchParams} from 'react-router-dom'
-import { calculateNewValue } from '@testing-library/user-event/dist/utils';
-//import { fontSize } from '@mui/system';
+
+
 
 const choice_list = [
   {id: "A1A2", score: 0},       //spicy [A1: spicy, A2: non-spicy]
@@ -55,11 +55,11 @@ const Main = () => {
         <Title>{FoodQuestionD[questionNo].title}</Title>
         <ImgButtonGroup>
           <Button className='leftbutton' variant="warning" onClick={() => clickHandler(1, FoodQuestionD[questionNo].type)} style={{width:'460px', height:'400px', margin:'0 20px'}}>
-            <img src={FoodQuestionD[questionNo].foodImg1} style={{width:'400px', height:'300px'}}></img>
+            <img src={FoodQuestionD[questionNo].foodImg1} alt='profile' style={{width:'400px', height:'300px'}}></img>
             <Desc>{FoodQuestionD[questionNo].answer1}</Desc>
           </Button>
           <Button className='rightbutton' variant="info" onClick={() => clickHandler(0, FoodQuestionD[questionNo].type)} style={{width:'460px', height:'400px', margin:'0 20px'}}>
-            <img src={FoodQuestionD[questionNo].foodImg2} style={{width:'400px', height:'300px'}}></img>
+            <img src={FoodQuestionD[questionNo].foodImg2} alt='profile' style={{width:'400px', height:'300px'}}></img>
             <Desc>{FoodQuestionD[questionNo].answer2}</Desc>
           </Button>
         </ImgButtonGroup>
