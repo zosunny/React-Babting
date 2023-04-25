@@ -1,6 +1,6 @@
 # Menu 추천 웹 프로젝트
 
-[DEMO](project-a-rho.vercel.app)
+[DEMO](https://project-a-rho.vercel.app/)
 
 ## 📆 Period
 > ```2022-05-15``` ~ ```2022-06-17```
